@@ -1,0 +1,356 @@
+<div id="primary-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-primary">
+                <h4 class="modal-title" id="primary-header-modalLabel">Apply a Filter</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Simple Text Search</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-search" data-switch="primary"/>
+                                        <label for="switch-search" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="text-search" type="text" class="form-control" maxlength="50" data-toggle="maxlength" placeholder="Use Name, Partners Name, Email Address or Contact Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Stage</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-stage" checked data-switch="primary"/>
+                                        <label for="switch-stage" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select id="select-stage" multiple class="form-control">
+                                            <option>New</option>
+                                            <option>EOI</option>
+                                            <option>Sales Process</option>
+                                            <option>Exchange</option>
+                                            <option>Settlement</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Role</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-role" checked data-switch="primary"/>
+                                        <label for="switch-role" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-role">
+                                            <option>Administrator</option>
+                                            <option>Sales Agent</option>
+                                            <option>Accountant</option>
+                                            <option>Client</option>
+                                            <option>BDM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Age</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-age" checked data-switch="primary"/>
+                                        <label for="switch-age" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-age">
+                                            <option>15- 25</option>
+                                            <option>26 - 35</option>
+                                            <option>36 - 50</option>
+                                            <option>51+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Meeting</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-meeting" checked data-switch="primary"/>
+                                        <label for="switch-meeting" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-meeting">
+                                            <option>Meeting Date Set</option>
+                                            <option>To Be Booked</option>
+                                            <option>Declined</option>
+                                            <option>Cancelled</option>
+                                            <option>No Show</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Sales Agent</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-agent" checked data-switch="primary"/>
+                                        <label for="switch-agent" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-agent">
+                                            <option>Adam Duffy</option>
+                                            <option>Brett Antymniuk</option>
+                                            <option>James Allnut</option>
+                                            <option>Glenn Piper</option>
+                                            <option>Alan Brawn</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Second Sales Agent</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-2-agent" checked data-switch="primary"/>
+                                        <label for="switch-2-agent" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-2-agent">
+                                            <option>Adam Duffy</option>
+                                            <option>Brett Antymniuk</option>
+                                            <option>James Allnut</option>
+                                            <option>Glenn Piper</option>
+                                            <option>Alan Brawn</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Referred By</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-referred" data-switch="primary"/>
+                                        <label for="switch-referred" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="text-referred" type="text" class="form-control" maxlength="50" data-toggle="maxlength" placeholder="Use Name, Email Address or Contact Number">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col d-flex justify-content-start">
+                                        <p class="text-muted font-14">
+                                            Any Refferer
+                                        </p>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-anyref" data-switch="primary"/>
+                                        <label for="switch-anyref" data-on-label="yes" data-off-label="no"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">BP's Name</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-bp" data-switch="primary"/>
+                                        <label for="switch-bp" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="text-bp" type="text" class="form-control" maxlength="50" data-toggle="maxlength" placeholder="Use Name, Email Address or Contact Number">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col d-flex justify-content-start">
+                                        <p class="text-muted font-14">
+                                            Any BP
+                                        </p>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-anybp" data-switch="primary"/>
+                                        <label for="switch-anybp" data-on-label="yes" data-off-label="no"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">City</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-city" data-switch="primary"/>
+                                        <label for="switch-city" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="text-city" type="text" class="form-control" maxlength="50" data-toggle="maxlength" placeholder="Australian Suburb Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Event Name</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-event" data-switch="primary"/>
+                                        <label for="switch-event" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="text-event" type="text" class="form-control" maxlength="50" data-toggle="maxlength" placeholder="Enter Event Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Next Follow-up Date</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-follow" data-switch="primary"/>
+                                        <label for="switch-follow" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control date" id="date-follow" data-toggle="date-picker" data-single-date-picker="true">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-start">
+                                        <h5 class="card-title">Lead Source</h5>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <!-- Primary Switch-->
+                                        <input type="checkbox" id="switch-source" checked data-switch="primary"/>
+                                        <label for="switch-source" data-on-label="On" data-off-label="Off"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" multiple id="select-source">
+                                            <option>Facebook</option>
+                                            <option>Instagram</option>
+                                            <option>Friend</option>
+                                            <option>Google</option>
+                                            <option>Brochure</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Apply Filter</button>
+            </div>
+        </div>
+    </div>
+</div>

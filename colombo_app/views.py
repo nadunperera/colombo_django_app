@@ -5,6 +5,10 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 
+def reminders(request):
+    return render(request, 'reminders.html')
+
+
 def users(request):
     return render(request, 'users.html')
 

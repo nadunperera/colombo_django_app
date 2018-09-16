@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Colombo for Meridian Australia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured CRM for Meridian Australia" name="description" />
+        <meta content="Yathra" name="Nadun Perera" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+
+        <!-- App css -->
+        <link href="{% static 'css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/app.min.css' %}" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            {% include 'partials/partials_left_sidebar.html' %}
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    {% include 'partials/partials_topbar.html' %}
+                    {% block content %}{% endblock %}
+                    <!-- Start Content-->
+
+
+                </div> <!-- content -->
+
+                {% include 'partials/partials_footer.html' %}
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        {% include 'partials/partials_right_sidebar.html' %}
+
+
+        <!-- App js -->
+        <script src="{% static 'js/app.min.js' %}"></script>
+    </body>
+</html>

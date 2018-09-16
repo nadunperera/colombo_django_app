@@ -2,28 +2,28 @@ from django.shortcuts import render
 
 
 def dashboard(request):
-    return render(request, 'colombo_app/dashboard.html')
+    return render(request, 'dashboard.html')
 
 
 def users(request):
-    return render(request, 'colombo_app/users.html')
+    return render(request, 'users.html')
 
 
 def projects(request):
-    return render(request, 'colombo_app/projects.html')
+    return render(request, 'projects.html')
 
 
 def events(request):
-    return render(request, 'colombo_app/events.html')
+    return render(request, 'events.html')
 
 
 def funnels(request):
-    return render(request, 'colombo_app/funnels.html')
+    return render(request, 'funnels.html')
 
 
 def eois(request):
-    return render(request, 'colombo_app/eois.html')
+    return render(request, 'eois.html')
 
 
 def invoices(request):
-    return render(request, 'colombo_app/invoices.html')
+    return render(request, 'invoices.html')

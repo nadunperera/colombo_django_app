@@ -31,9 +31,12 @@
                 <div class="content">
 
                     {% include 'partials/partials_topbar.html' %}
-                    {% block content %}{% endblock %}
-                    <!-- Start Content-->
 
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        {% block content %}{% endblock %}
+                    </div>
+                    <!-- container -->
 
                 </div> <!-- content -->
 
@@ -55,5 +58,13 @@
 
         <!-- App js -->
         <script src="{% static 'js/app.min.js' %}"></script>
+
+        <!-- third party js -->
+        <script src="{% static 'js/vendor/Chart.bundle.min.js' %}"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="{% static 'js/pages/demo.dashboard.js' %}"></script>
+        <!-- end demo js-->
     </body>
 </html>
